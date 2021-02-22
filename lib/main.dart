@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:pointtrackernew/views/character_list.dart';
+// import 'package:pointtrackernew/views/character_list.dart';
+
+import 'games.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       color: Colors.teal,
-      home: CharacterList(),
+      home:Game(),
     );
   }
 }

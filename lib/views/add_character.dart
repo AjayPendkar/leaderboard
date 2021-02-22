@@ -61,6 +61,39 @@ class _AddContestantState extends State<AddContestant> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
+                      // Text(
+                      //   "Game ID:",
+                      //   style: TextStyle(
+                      //       color: Color(0xff787878),
+                      //       fontSize: 15.0,
+                      //       fontWeight: FontWeight.w500),
+                      // ),
+                      // SizedBox(
+                      //   height: 8.0,
+                      // ),
+                      // TextFormField(
+                      //   // validator: (input) {
+                      //   //   // if (getCharNames.contains(input)) {
+                      //   //   //   return "Name already exists";
+                      //   //   // } else {
+                      //   //   //   return null;
+                      //   //   // }
+                      //   // },
+                      //   cursorColor: Colors.teal,
+                      //   onChanged: (value) {
+                      //     setState(() {
+                      //       newContestants = value;
+                      //     });
+                      //   },
+                      //   decoration:
+                      //       kInputDecoration.copyWith(hintText: "Game Name"),
+                      //   style: TextStyle(
+                      //     color: Colors.teal,
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 15.0,
+                      // ),
                       Text(
                         "Name:",
                         style: TextStyle(
@@ -72,13 +105,13 @@ class _AddContestantState extends State<AddContestant> {
                         height: 8.0,
                       ),
                       TextFormField(
-                        validator: (input) {
-                          // if (getCharNames.contains(input)) {
-                          //   return "Name already exists";
-                          // } else {
-                          //   return null;
-                          // }
-                        },
+                        // validator: (input) {
+                        //   // if (getCharNames.contains(input)) {
+                        //   //   return "Name already exists";
+                        //   // } else {
+                        //   //   return null;
+                        //   // }
+                        // },
                         cursorColor: Colors.teal,
                         onChanged: (value) {
                           setState(() {
@@ -92,10 +125,10 @@ class _AddContestantState extends State<AddContestant> {
                         ),
                       ),
                       SizedBox(
-                        height: 15.0,
+                        height: 8.0,
                       ),
                       Text(
-                        "Starting Point(s):",
+                        "Starting score:",
                         style: TextStyle(
                             color: Color(0xff787878),
                             fontSize: 15.0,
@@ -110,7 +143,7 @@ class _AddContestantState extends State<AddContestant> {
                         ),
                         cursorColor: Colors.teal,
                         decoration: kInputDecoration.copyWith(
-                            hintText: "Starting point e.g 100"),
+                            hintText: "Starting score e.g 100"),
                         keyboardType: TextInputType.number,
                         validator: (input) {
                           final isDigitsOnly = int.tryParse(input);
